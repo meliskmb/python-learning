@@ -33,3 +33,21 @@ print("rjust(20):", example.rjust(20))  # Output: '               hello'
 
 # Left-pad the string with zeros to reach the specified width
 print("zfill(10):", example.zfill(10))  # Output: '00000hello'
+
+# 3. SEARCHING
+example = "hello world, hello Python"
+
+# Count non-overlapping occurrences of a substring
+print("count('hello'):", example.count('hello'))  # Output: 2
+
+# Find the lowest index of the substring (-1 if not found)
+print("find('world'):", example.find('world'))  # Output: 6
+
+# Find the lowest index of the substring (raises ValueError if not found)
+print("index('hello'):", example.index('hello'))  # Output: 0
+
+# Find the highest index of the substring (-1 if not found)
+print("rfind('hello'):", example.rfind('hello'))  # Output: 13
+
+# Find the highest index of the substring (raises ValueError if not found)
+print("rindex('hello'):", example.rindex('hello'))  # Output: 13
