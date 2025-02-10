@@ -29,3 +29,15 @@ print("rfind('hello', 0, 10):", example.rfind('hello', 0, 10))  # Output: 0 (Onl
 # Find the highest index of the substring (raises ValueError if not found)
 print("rindex('hello'):", example.rindex('hello'))  # Output: 13
 # print("rindex('not_found'):", example.rindex('not_found'))  # Raises ValueError
+
+# Check if the string starts with a specific prefix
+print("startswith('hello'):", example.startswith("hello"))  # Output: True
+print("startswith('world'):", example.startswith("world"))  # Output: False
+print("startswith(('hi', 'hello')):", example.startswith(("hi", "hello")))  # Output: True
+print("startswith('hello', 7):", example.startswith("hello", 7))  # Output: False
+
+# Check if the string ends with a specific suffix
+print("endswith('Python'):", example.endswith("Python"))  # Output: True
+print("endswith('hello'):", example.endswith("hello"))  # Output: False
+print("endswith(('world', 'Python')):", example.endswith(("world", "Python")))  # Output: True
+print("endswith('Python', 0, 25):", example.endswith("Python", 0, 25))  # Output: True
